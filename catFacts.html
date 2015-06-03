@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>Facts about cats</title>
+</head>
+
+<button id = "button"> Get new fact</button>
+
+<div id="factLocation">
+    
+</div>
+
+<body>
+  
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    
+<script>  
+$("button").click(function (){
+    $.getJSON('catFacts.php', function(jsonItem) {
+        $("#factLocation").html(jsonItem.facts); 
+    });
+});
+</script>
+    
+</body>
+</html>

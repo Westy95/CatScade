@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<style>
+
+h1.monospace {font-family: "Lucida Console", monospace;}
+
+body{background-color: #37474F;}
+
+body {text-align: center;}
+
+.container{background-color: #FFFFFF;
+			display: inline-block;}
+
+.cat{position: fixed;
+	right: 0px;
+	bottom: 0px;}
+
+.cat{background-color: #455A64;}		
+
+.talkbubble {
+   width: 220px;
+   height: 200px;
+   background: white;
+   position: fixed;
+   right: 270px; 
+   bottom: 0px;
+   -moz-border-radius:    20px;
+   -webkit-border-radius: 20px;
+   border-radius:         20px;
+}
+.talkbubble:before {
+   content:"";
+   position: fixed;
+   right: 275px;
+   bottom: 180px;
+   width: 0;
+   height: 0;
+   border-top: 20px solid transparent;
+   border-right: 30px solid white;
+   border-bottom: 20px solid transparent;
+}
+
+.speech{position: fixed;
+		bottom: 40px; 
+		right: 310px;
+}
+
+.speech {font-family: "Lucida Console", monospace;}
+
+</style>
+</head>
+<body>
+
+<h1 class= "monospace"><font color="white">CatScade</h1>
+
+<p>
+<form name="input" action="login.php" method="POST">
+
+Username:<input type="text" name="user"><br>
+Password:<input type="password" name="pwd"><br>
+
+<input type="submit" value="Enter">
+<a href="register.html">
+<input type="button" value="Sign up"></form></a><br>
+
+<div class= "container">
+<a href="forgottenpassword.html">Forgotten Password?</a>
+</div>
+
+<img src= "https://s-media-cache-ak0.pinimg.com/236x/ca/ab/32/caab32b4c09c96221c1e08497bade200.jpg" style= "width:260px; height:260px" class= "cat">
+
+</form>
+
+<div class ="talkbubble"></div>
+
+<div class ="speech"><font color="black"><font size='6'>"Welcome<br>Idiot<br>Humans!"</div>
+
+</body>
+</html>
